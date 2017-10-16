@@ -4,6 +4,10 @@ import pl.sda.jwwa5.lab10homework.User;
 
 import java.util.*;
 
+/**
+ * This class is reponsible for creation list of users and putting it to the MAP (precisely speeking - TreeMap, as the values
+ * has to be sorted
+ */
 public class UserService {
 
 private Map<String,User> userMap = new TreeMap<>();
@@ -12,15 +16,29 @@ private Map<String,User> userMap = new TreeMap<>();
         this.userMap = createUserMap();
     }
 
+    /**
+     * This method adds user to map. As for the key it takes user.firstName concatenated with user.age
+     * @param userMap map of users
+     * @param user user object
+     * @return user treemap
+     */
     private Map<String,User> addToUserMap(Map<String,User> userMap, User user) {
         userMap.put(user.getLastName()+user.getAge(),user);
         return userMap;
     }
 
+    /**
+     * Prints user map using lambda expression
+     * @param userMap user map passed as parameter
+     */
     public void printUserMap(Map<String,User> userMap) {
         userMap.forEach((key,value) -> System.out.println(value.toString()));
     }
 
+    /**
+     * Creates user map. No input for this method. For each new item, which will be added to map it calls {@link #addToUserMap(Map, User)} method
+     * @return Map of users
+     */
     private Map<String,User> createUserMap() {
         Map<String,User> localUserMap = new TreeMap<>();
 
