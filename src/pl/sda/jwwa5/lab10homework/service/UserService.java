@@ -2,29 +2,23 @@ package pl.sda.jwwa5.lab10homework.service;
 
 import pl.sda.jwwa5.lab10homework.User;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class UserService {
 
-//    private List<User> userList = new ArrayList<>();
-    private Map<String,User> userMap = new TreeMap<>();
+private Map<String,User> userMap = new TreeMap<>();
 
     public UserService() {
         this.userMap = createUserMap();
     }
 
     private Map<String,User> addToUserMap(Map<String,User> userMap, User user) {
-        userMap.put(user.getLastName(),user);
+        userMap.put(user.getLastName()+user.getAge(),user);
         return userMap;
     }
 
     public void printUserMap(Map<String,User> userMap) {
-        for (String mapKey : userMap.keySet()) {
-            System.out.println(userMap.get(mapKey).toString());
-        }
+        userMap.forEach((key,value) -> System.out.println(value.toString()));
     }
 
     private Map<String,User> createUserMap() {
@@ -118,7 +112,13 @@ public class UserService {
         localUserMap = addToUserMap(localUserMap, new User("Jakub_Andrzejewski_22"));
         localUserMap = addToUserMap(localUserMap, new User("Aleksandra_Olszewska_52"));
 //80
-
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_38"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_36"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_00"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_45"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_49"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_56"));
+        localUserMap = addToUserMap(localUserMap, new User("Beata_Andrzejewska_62"));
 
         return localUserMap;
     }
