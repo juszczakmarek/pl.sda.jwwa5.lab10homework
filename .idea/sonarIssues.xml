@@ -43,7 +43,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserCompareAge.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserCompareAgeAsc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserCompareAgeDesc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/userCompareAgeAsc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/whatever2.java">
           <value>
             <set />
           </value>
