@@ -49,6 +49,7 @@ public class UserService {
      * @return Map of users
      */
     private Map<String,ArrayList<User>> createUserMap() {
+        //Map<String,ArrayList<User>> localUserMap = new HashMap<>();
         Map<String,ArrayList<User>> localUserMap = new TreeMap<>();
 
         localUserMap = addToUserMap(localUserMap, new User("Edward_Nowak_84"));
