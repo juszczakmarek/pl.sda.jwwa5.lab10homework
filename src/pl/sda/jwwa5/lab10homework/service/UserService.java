@@ -4,25 +4,53 @@ import pl.sda.jwwa5.lab10homework.User;
 
 import java.util.*;
 
+/**
+ * This class is reponsible for creation list of users and putting it to the MAP (precisely speeking - TreeMap, as the values
+ * has to be sorted
+ */
 public class UserService {
 
-private Map<String,User> userMap = new TreeMap<>();
+    private Map<String,ArrayList<User>> userMap = new HashMap<>();
 
     public UserService() {
         this.userMap = createUserMap();
     }
 
-    private Map<String,User> addToUserMap(Map<String,User> userMap, User user) {
-        userMap.put(user.getLastName()+user.getAge(),user);
+    /**
+     * This method adds user to map. As for the key it takes user.firstName concatenated with user.age
+     * @param userMap map of users
+     * @param user user object
+     * @return user map
+     */
+    private Map<String,ArrayList<User>> addToUserMap(Map<String,ArrayList<User>> userMap, User user) {
+        if (userMap.containsKey(user.getLastName())) {
+            ArrayList<User> localUserList = userMap.get(user.getLastName());
+            localUserList.add(user);
+            userMap.put(user.getLastName(),localUserList);
+        } else {
+            ArrayList<User> localUserList = new ArrayList<>();
+            localUserList.add(user);
+            userMap.put(user.getLastName(),localUserList);
+        }
+
         return userMap;
     }
 
-    public void printUserMap(Map<String,User> userMap) {
+    /**
+     * Prints user map using lambda expression
+     * @param userMap user map passed as parameter
+     */
+    public void printUserMap(Map<String,ArrayList<User>> userMap) {
         userMap.forEach((key,value) -> System.out.println(value.toString()));
     }
 
-    private Map<String,User> createUserMap() {
-        Map<String,User> localUserMap = new TreeMap<>();
+    /**
+     * Creates user map. No input for this method. For each new item, which will be added to map it calls {@link #addToUserMap(Map, User)} method
+     * @return Map of users
+     */
+    private Map<String,ArrayList<User>> createUserMap() {
+        //Map<String,ArrayList<User>> localUserMap = new HashMap<>();
+        Map<String,ArrayList<User>> localUserMap = new TreeMap<>();
 
         localUserMap = addToUserMap(localUserMap, new User("Edward_Nowak_84"));
         localUserMap = addToUserMap(localUserMap, new User("Agata_Czerwińska_6"));
@@ -127,7 +155,7 @@ private Map<String,User> userMap = new TreeMap<>();
     //----------------------------
 
 
-    public Map<String, User> getUserMap() {
+    public Map<String,ArrayList<User>> getUserMap() {
         return userMap;
     }
 }
