@@ -16,7 +16,7 @@ import java.util.TreeMap;
 public class Runner {
     public static void main(String[] args) {
 
-        Map<String,User> userMap;
+        Map<String,ArrayList<User>> userMap;
         UserService userService = new UserService();
         userMap = userService.getUserMap();
         userService.printUserMap(userMap);
