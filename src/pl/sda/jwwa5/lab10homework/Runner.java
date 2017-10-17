@@ -3,9 +3,7 @@ package pl.sda.jwwa5.lab10homework;
 import pl.sda.jwwa5.lab10homework.service.UserService;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * Goal of this exercise is to:
