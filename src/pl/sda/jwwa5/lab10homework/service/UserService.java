@@ -30,12 +30,14 @@ public class UserService {
         if (userMap.containsKey(user.getLastName())) {
             ArrayList<User> localUserList = userMap.get(user.getLastName());
             localUserList.add(user);
-            localUserList.sort(new UserCompareAgeAsc());
+            //localUserList.sort(new UserCompareAgeAsc()); //natural order
+            localUserList.sort(new UserCompareAgeAsc().reversed()); //reversed order
             userMap.put(user.getLastName(),localUserList);
         } else {
             ArrayList<User> localUserList = new ArrayList<>();
             localUserList.add(user);
-            localUserList.sort(new UserCompareAgeAsc());
+            //localUserList.sort(new UserCompareAgeAsc()); //natural order
+            localUserList.sort(new UserCompareAgeAsc().reversed()); //reversed order
             userMap.put(user.getLastName(),localUserList);
         }
 
@@ -55,8 +57,8 @@ public class UserService {
      * @return Map of users
      */
     private Map<String,ArrayList<User>> createUserMap() {
-        //Map<String,ArrayList<User>> localUserMap = new HashMap<>();
-        Map<String,ArrayList<User>> localUserMap = new TreeMap<>();
+        Map<String,ArrayList<User>> localUserMap = new TreeMap<>();  //natural order
+        //Map<String,ArrayList<User>> localUserMap = new TreeMap<>(Collections.reverseOrder()); //reversed order
 
         Scanner scanner = null;
 
