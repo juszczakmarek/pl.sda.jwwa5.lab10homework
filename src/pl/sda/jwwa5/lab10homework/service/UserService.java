@@ -26,10 +26,12 @@ public class UserService {
         if (userMap.containsKey(user.getLastName())) {
             ArrayList<User> localUserList = userMap.get(user.getLastName());
             localUserList.add(user);
+            localUserList.sort(new UserCompareAgeAsc());
             userMap.put(user.getLastName(),localUserList);
         } else {
             ArrayList<User> localUserList = new ArrayList<>();
             localUserList.add(user);
+            localUserList.sort(new UserCompareAgeAsc());
             userMap.put(user.getLastName(),localUserList);
         }
 
