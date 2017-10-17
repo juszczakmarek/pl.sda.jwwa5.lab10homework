@@ -68,6 +68,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserCompareLastNameAsc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserCompareLastNameDesc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserService.java">
           <value>
             <set />
@@ -79,6 +89,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/whatever2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LAB/test/src/pl/sda/wwa5/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LAB/test/src/pl/sda/wwa5/StringComparator.java">
           <value>
             <set />
           </value>
