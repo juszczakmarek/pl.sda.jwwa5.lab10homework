@@ -18,9 +18,7 @@ public class Runner {
         Map<String,ArrayList<User>> userMap;
         UserService userService = new UserService();
         userMap = userService.getUserMap();
-        //userService.printUserMap(userMap);
-
-        StreamsExercise streamsExercise = new StreamsExercise();
+        userService.printUserMap(userMap);
 
     }
 }
