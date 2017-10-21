@@ -48,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/StreamsExercise.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/UserComparator.java">
           <value>
             <set />
@@ -83,12 +88,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/functionalInterfaces/AgeChecker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/functionalInterfaces/CheckIfOlder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/functionalInterfaces/CheckerIfOlder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/functionalInterfaces/classess/CheckerIfOlder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/userCompareAgeAsc.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/pl/sda/jwwa5/lab10homework/service/whatever2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/TestTest.java">
           <value>
             <set />
           </value>

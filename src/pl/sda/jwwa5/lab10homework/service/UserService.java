@@ -14,7 +14,7 @@ public class UserService {
 
     private Map<String,ArrayList<User>> userMap = new HashMap<>();
     private final String FILENAME = "users.txt";
-    private final String PATH = "./input/";
+    private final String PATH = System.getProperty("user.dir")+File.separator+"input\\";
 
     public UserService() {
         this.userMap = createUserMap();
