@@ -1,5 +1,6 @@
 package pl.sda.jwwa5.lab10homework;
 
+import pl.sda.jwwa5.lab10homework.service.StreamsExercise;
 import pl.sda.jwwa5.lab10homework.service.UserService;
 
 import java.util.ArrayList;
@@ -17,7 +18,9 @@ public class Runner {
         Map<String,ArrayList<User>> userMap;
         UserService userService = new UserService();
         userMap = userService.getUserMap();
-        userService.printUserMap(userMap);
+        //userService.printUserMap(userMap);
+
+        StreamsExercise streamsExercise = new StreamsExercise();
 
     }
 }
