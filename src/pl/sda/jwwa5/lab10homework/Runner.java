@@ -1,6 +1,5 @@
 package pl.sda.jwwa5.lab10homework;
 
-import pl.sda.jwwa5.lab10homework.service.StreamsExercise;
 import pl.sda.jwwa5.lab10homework.service.UserService;
 
 import java.util.ArrayList;
